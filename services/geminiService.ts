@@ -4,12 +4,13 @@ import { InstrumentType, Recording, Tutorial } from "../types";
 
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
+console.log("ENV CHECK:", API_KEY);
+
 if (!API_KEY) {
-  console.error("Gemini API key is missing. Check Netlify environment variables.");
+  alert("Gemini API key is missing!");
 }
 
 const ai = new GoogleGenAI({ apiKey: API_KEY || '' });
-
 
 const getInstrumentNotes = (type: InstrumentType): string[] => {
   switch (type) {
