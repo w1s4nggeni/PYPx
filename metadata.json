@@ -1,0 +1,7 @@
+{
+  "name": "Maestro Spark Academy",
+  "description": "An interactive music learning platform featuring high-quality virtual instruments (Piano, Drums, Violin, Harp, Chimes) with an integrated AI tutor to guide students through their musical journey.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
